@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import com.rays.common.FrontCtl;
 
 /**
- *Amit Bansal
+ * Amit Bansal
  *
  */
 @SpringBootApplication
@@ -27,6 +27,7 @@ public class ProjectOrsApplication extends SpringBootServletInitializer {
 	FrontCtl frontCtl;
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(ProjectOrsApplication.class, args);
 
 	}
@@ -59,7 +60,8 @@ public class ProjectOrsApplication extends SpringBootServletInitializer {
 
 			@Override
 			public void addInterceptors(InterceptorRegistry registry) {
-				registry.addInterceptor(frontCtl).addPathPatterns("/**").excludePathPatterns("/Auth/**","/User/profilePic/**", "/Shopping/profilePic/**");
+				registry.addInterceptor(frontCtl).addPathPatterns("/**").excludePathPatterns("/Auth/**",
+						"/User/profilePic/**", "/Shopping/profilePic/**");
 			}
 
 			/*

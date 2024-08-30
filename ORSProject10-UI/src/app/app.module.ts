@@ -100,6 +100,18 @@ import { StockpurchaseComponent } from './stockpurchase/stockpurchase.component'
 import { StockpurchaselistComponent } from './stockpurchase/stockpurchaselist.component';
 import { StockanalysisComponent } from './stockanalysis/stockanalysis.component';
 import { StockanalysislistComponent } from './stockanalysis/stockanalysislist.component';
+import { TradehistoryComponent } from './tradehistory/tradehistory.component';
+import { TradehistorylistComponent } from './tradehistory/tradehistorylist.component';
+import { AssettrackingComponent } from './assettracking/assettracking.component';
+import { AssettrackinglistComponent } from './assettracking/assettrackinglist.component';
+
+import { AssetComponent } from './asset/asset.component';
+import { AssetlistComponent } from './asset/assetlist.component';
+import { PositionComponent } from './position/position.component';
+import { PositionlistComponent } from './position/positionlist.component';
+import { LeadComponent } from './lead/lead.component';
+import { LeadlistComponent } from './lead/leadlist.component';
+
 
 
 
@@ -131,7 +143,6 @@ export function myHttpLoader(http: HttpClient) {
     MessageListComponent,
     UserComponent,
     UserListComponent,
-
     RoleComponent,
     RoleListComponent,
     CourseComponent,
@@ -200,10 +211,20 @@ export function myHttpLoader(http: HttpClient) {
     StockpurchaselistComponent,
     StockanalysisComponent,
     StockanalysislistComponent,
+    TradehistoryComponent,
+    TradehistorylistComponent,
+    AssettrackingComponent,
+    AssettrackinglistComponent,
+   
+    AssetComponent,
+    AssetlistComponent,
+    PositionComponent,
+    PositionlistComponent,
+    LeadComponent,
+    LeadlistComponent,
     
-
-
-
+    
+  
 
 
   ],

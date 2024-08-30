@@ -118,7 +118,7 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-money-bill-wave"></i></div>
                 </div>
-                <input type="text" name="purchasePrice" [(ngModel)]="form.data.purchasePrice" class="form-control" placeholder="{{ 'Enter purchasePrice' | translate }}" maxlength="6" (keypress)="validateNumberAndDotInput($event)">
+                <input type="text" name="purchasePrice" [(ngModel)]="form.data.purchasePrice" class="form-control" placeholder="{{ 'Enter purchasePrice' | translate }}" maxlength="7" (keypress)="validateNumberAndDotInput($event)">
               </div>
               <span *ngIf="form.inputerror.purchasePrice" class="alertRedColor">{{ form.inputerror.purchasePrice }}</span>
             </div>

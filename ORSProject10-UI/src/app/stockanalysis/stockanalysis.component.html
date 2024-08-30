@@ -106,8 +106,9 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-user"></i></div>
                 </div>
-                <input type="text" name="stockSymbol" [(ngModel)]="form.data.stockSymbol" class="form-control" placeholder="{{ 'Enter StockSymbol' | translate }}" maxlength="31" 
-                >
+                <input type="text" name="stockSymbol" [(ngModel)]="form.data.stockSymbol" class="form-control" placeholder="{{ 'Enter StockSymbol' | translate }}" maxlength="6" 
+                [ngClass]="{'invalid': isInvalid}" 
+                (input)="validateAlphanumericInput($event)">>
               </div>
               <span *ngIf="form.inputerror.stockSymbol" class="alertRedColor">{{ form.inputerror.stockSymbol }}</span>
             </div>

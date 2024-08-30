@@ -83,6 +83,16 @@ import { StockpurchaseComponent } from './stockpurchase/stockpurchase.component'
 import { StockpurchaselistComponent } from './stockpurchase/stockpurchaselist.component';
 import { StockanalysisComponent } from './stockanalysis/stockanalysis.component';
 import { StockanalysislistComponent } from './stockanalysis/stockanalysislist.component';
+import { TradehistoryComponent } from './tradehistory/tradehistory.component';
+import { TradehistorylistComponent } from './tradehistory/tradehistorylist.component';
+import { AssettrackingComponent } from './assettracking/assettracking.component';
+import { AssettrackinglistComponent } from './assettracking/assettrackinglist.component';
+import { AssetComponent } from './asset/asset.component';
+import { AssetlistComponent } from './asset/assetlist.component';
+import { PositionComponent } from './position/position.component';
+import { PositionlistComponent } from './position/positionlist.component';
+import { LeadComponent } from './lead/lead.component';
+import { LeadlistComponent } from './lead/leadlist.component';
 
 
 
@@ -689,6 +699,92 @@ const routes: Routes = [
         component: StockanalysisComponent
 
     },
+
+    {
+        path: 'tradehistory',
+        component: TradehistoryComponent
+
+    },
+    {
+        path: 'tradehistorylist',
+        component: TradehistorylistComponent
+
+    },
+    {
+        path: 'tradehistory/:id',
+        component: TradehistoryComponent
+
+    },
+
+
+    {
+        path: 'assettracking',
+        component: AssettrackingComponent
+
+    },
+    {
+        path: 'assettrackinglist',
+        component: AssettrackinglistComponent
+
+    },
+    {
+        path: 'assettracking/:id',
+        component: AssettrackingComponent
+
+    },
+    {
+        path: 'asset',
+        component: AssetComponent
+
+    },
+    {
+        path: 'assetlist',
+        component: AssetlistComponent
+
+    },
+    {
+        path: 'asset/:id',
+        component: AssetComponent
+
+    },
+
+
+    {
+        path: 'position',
+        component: PositionComponent
+
+    },
+    {
+        path: 'positionlist',
+        component: PositionlistComponent
+
+    },
+    {
+        path: 'position/:id',
+        component: PositionComponent
+
+    },
+
+    {
+        path: 'lead',
+        component: LeadComponent
+
+    },
+    {
+        path: 'leadlist',
+        component: LeadlistComponent
+
+    },
+    {
+        path: 'lead/:id',
+        component: LeadComponent
+
+    },
+
+
+   
+
+    
    
 
 

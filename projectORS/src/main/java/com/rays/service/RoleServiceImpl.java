@@ -18,7 +18,7 @@ import com.rays.dto.RoleDTO;
  * back.
  * 
  * Default propagation value is Propagation.REQUIRED and readOnly = false
- *Amit Bansal 
+ * Amit Bansal 
  */
 @Service
 @Transactional

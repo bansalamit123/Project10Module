@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./stockanalysis.component.css']
 })
 export class StockanalysisComponent extends BaseCtl implements OnInit {
-
+  isInvalid:boolean=false
   getKey = false;
   selected = null;
   userForm: FormGroup = null;
@@ -51,7 +51,21 @@ export class StockanalysisComponent extends BaseCtl implements OnInit {
     });
   }
   
-  
+  validateAlphanumericInput(event: Event): void {
+    const inputElement = event.target as HTMLInputElement;
+    const inputValue = inputElement.value;
+
+    // Regular expression to allow only alphanumeric characters
+    const alphanumericRegex = /^[a-zA-Z0-9]*$/;
+
+    // Validate the entire input value
+    if (!alphanumericRegex.test(inputValue)) {
+      this.isInvalid = true;
+      inputElement.value = inputValue.replace(/[^a-zA-Z0-9]/g, ''); // Remove non-alphanumeric characters
+    } else {
+      this.isInvalid = inputValue.length < 6; // Check if the input is valid based on length
+    }
+  }
 
   submit1() {
     var _self = this;

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.rays.common.BaseDAOImpl;
 import com.rays.dto.CollegeDTO;
 /**
- *Amit Bansal 
+ * Amit Bansal 
  *
  */
 @Repository

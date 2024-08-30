@@ -191,7 +191,7 @@ export class StockpurchaseComponent  extends BaseCtl implements OnInit {
 
     // Ensure the value is between 1 and 1000
     const currentValue = input.value + key;
-    if (parseInt(currentValue) > 1000) {
+    if (parseInt(currentValue) > 10000) {
       event.preventDefault();
     }
   }

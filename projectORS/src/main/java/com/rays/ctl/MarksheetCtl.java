@@ -20,7 +20,7 @@ import com.rays.service.RoleServiceInt;
 import com.rays.service.StudentServiceInt;
 
 /**
- *Amit Bansal 
+ * Amit Bansal 
  *
  */
 @RestController

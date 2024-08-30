@@ -53,7 +53,7 @@ export class BaseListCtl extends BaseCtl {
      this.display(); 
    
    
-    this.isMasterSel = false ;  
+   this.isMasterSel = false ;  
   //  this.searchOperation('previous');
   }
 

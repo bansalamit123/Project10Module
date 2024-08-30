@@ -78,7 +78,7 @@ public class ShoppingCtl extends BaseCtl<ShoppingForm, ShoppingDTO, ShoppingServ
 	public ORSResponse uploadPic(@PathVariable Long userId, @RequestParam("file") MultipartFile file,
 			HttpServletRequest req) {
 
-		System.out.println("User ID id --------------Amit Bansal" + userId);
+		System.out.println("User ID id -------------- Amit Bansal" + userId);
 
 		ShoppingDTO shoppingDTO = baseService.findById(userId, userContext);
 

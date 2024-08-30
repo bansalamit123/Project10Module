@@ -35,6 +35,12 @@ export class EndpointServiceService {
   public SUPPLIER = this.SERVER_URL + "/Supplier";
   public INVENTORY = this.SERVER_URL + "/Inventory";
   public VEHICLETRACKING = this.SERVER_URL + "/VehicleTracking";
+  public ASSETTRACKING = this.SERVER_URL + "/AssetTracking";
+  public ASSET = this.SERVER_URL + "/Asset";
+  public POSITION = this.SERVER_URL + "/Position";
+  public LEAD = this.SERVER_URL + "/Lead";
+  public TRADEHISTORY = this.SERVER_URL + "/TradeHistory";
+  public PROPRIETOR = this.SERVER_URL + "/Proprietor";
   public STOCKPURCHASE = this.SERVER_URL + "/StockPurchase";
   public STOCKANALYSIS = this.SERVER_URL + "/StockAnalysis";
   public PRODUCTDETAILS = this.SERVER_URL + "/ProductDetails";

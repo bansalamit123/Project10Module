@@ -20,7 +20,7 @@ import javax.persistence.criteria.Root;
 import com.rays.exception.DuplicateRecordException;
 
 /**
- *Amit Bansal
+ * Amit Bansal
  *
  * @param <T>
  */

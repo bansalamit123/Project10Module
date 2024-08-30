@@ -161,17 +161,18 @@ background-size: cover;width:100%;
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-mobile grey-text"></i> </div>
                 </div>
-                <input type="number" name="alternateMobile" maxlength="10" [(ngModel)]="form.data.alternateMobile" class="form-control"
-                  placeholder="{{'Enter Alternate Number' | translate}}">
+                <input type="number" name="alternateMobile" maxlength="10" [(ngModel)]="form.data.alternateMobile"
+                  class="form-control" placeholder="{{'Enter Alternate Number' | translate}}">
               </div>
             </div><span *ngIf="form.inputerror.alternateMobile != null" class="alertRedColor" style=" color: red;">
-              {{'mobile'| translate}} </span></div>
-            <!-- <span class="alertRedColor"> {{form.inputerror.alternateMobile}} </span> -->
+              {{'mobile'| translate}} </span>
+          </div>
+          <!-- <span class="alertRedColor"> {{form.inputerror.alternateMobile}} </span> -->
 
 
-            <div>
-         
-             <span class="pt-2"><b>{{'DOB' | translate }}</b>
+          <div>
+
+            <span class="pt-2"><b>{{'DOB' | translate }}</b>
               <span class="required-field"></span></span>
 
             <div class="col-sm-12">
@@ -184,7 +185,7 @@ background-size: cover;width:100%;
                   required />
               </div>
             </div>
-<span *ngIf="form.inputerror.dob != null" class="alertRedColor" style=" color: red;"> {{'dob'|
+            <span *ngIf="form.inputerror.dob != null" class="alertRedColor" style=" color: red;"> {{'dob'|
               translate}} </span>
             <!-- <span class="alertRedColor"> {{form.inputerror.dob}} </span> -->
           </div>
@@ -271,7 +272,7 @@ background-size: cover;width:100%;
             </div>
             <div class="pt-2">
               <a class="btn btn-warning mr-1" type="button" [routerLink]="['/userlist']"
-                  style="text-decoration: none; color: white;">{{'List' | translate }}</a>
+                style="text-decoration: none; color: white;">{{'List' | translate }}</a>
             </div>
           </div>
 

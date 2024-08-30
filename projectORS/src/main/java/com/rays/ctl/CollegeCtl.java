@@ -17,7 +17,7 @@ import com.rays.service.CollegeServiceInt;
 
 
 /**
- *Amit Bansal 
+ * Amit Bansal 
  *
  */
 @RestController

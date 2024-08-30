@@ -20,7 +20,9 @@ public class FieldForm extends BaseForm {
 	private String labell;
 	
 	@NotEmpty(message = "Please enter description")
-	@Size(max = 200, message = "Description must be up to 200 charecters")
+	@Pattern(regexp = "^[\\w\\s,.\\-]{10,200}$", message = "Description must be between 10 and 200 characters and can include letters, numbers, spaces, commas, periods, and hyphens.")
+//@Pattern(regexp = "^[\\w\\s,.\\-]{10,200}$", message = "Investment strategy must be between 10 and 200 characters and can include letters, numbers, spaces, commas, periods, and hyphens.")
+
 	private String description;
 	
 	@NotEmpty(message = "Please enter active")

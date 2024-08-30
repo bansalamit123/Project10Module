@@ -10,7 +10,7 @@ import com.rays.common.BaseDTO;
 
 /**
  * College DTO class
- *Amit Bansal 
+ * Amit Bansal 
  */
 
 @Entity

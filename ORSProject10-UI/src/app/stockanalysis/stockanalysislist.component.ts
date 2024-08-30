@@ -11,7 +11,7 @@ import { BaseListCtl } from '../base-list.component';
   styleUrls: ['./stockanalysislist.component.css']
 })
 export class StockanalysislistComponent  extends BaseListCtl implements OnInit {
-
+  isInvalid :boolean=false;
   public form = {
     error: false,
     message: null,
@@ -63,6 +63,22 @@ export class StockanalysislistComponent  extends BaseListCtl implements OnInit {
     return date.toLocaleDateString(undefined, options);
   }
 
+
+  validateAlphanumericInput(event: Event): void {
+    const inputElement = event.target as HTMLInputElement;
+    const inputValue = inputElement.value;
+
+    // Regular expression to allow only alphanumeric characters
+    const alphanumericRegex = /^[a-zA-Z0-9]*$/;
+
+    // Validate the entire input value
+    if (!alphanumericRegex.test(inputValue)) {
+      this.isInvalid = true;
+      inputElement.value = inputValue.replace(/[^a-zA-Z0-9]/g, ''); // Remove non-alphanumeric characters
+    } else {
+      this.isInvalid = inputValue.length < 6; // Check if the input is valid based on length
+    }
+  }
   // Validate input for name and mobile fields
   validateInput(event: any, field: string) {
     const value = event.target.value;

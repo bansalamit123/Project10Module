@@ -7,7 +7,7 @@ import com.rays.common.UserContext;
 
 /**
  * College Service interface.
- *Amit Bansal 
+ * Amit Bansal 
  */
 
 public interface AttachmentServiceInt extends BaseServiceInt<AttachmentDTO> {

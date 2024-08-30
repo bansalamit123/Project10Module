@@ -16,7 +16,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 /**
  * Base class extended by all DTOs.
- *Amit Bansal 
+ * Amit Bansal 
  */
 @MappedSuperclass
 public abstract class BaseDTO implements Serializable, DropdownList, Comparable<BaseDTO> {

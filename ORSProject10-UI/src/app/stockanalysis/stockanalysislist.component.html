@@ -45,9 +45,9 @@
       <div class="row search-inputs justify-content-center">
         <div class="col-md-3">
           <input type="text" class="form-control" [(ngModel)]="form.searchParams.stockSymbol"
-            placeholder="{{ 'Search StockSymbol' | translate }}"   maxlength="20"
-               (keypress)="validateAlphabetInput($event)"   
-            maxlength="20" (input)="validateInput($event, 'name')"> 
+            placeholder="{{ 'Search StockSymbol' | translate }}"   maxlength="5"
+            [ngClass]="{'invalid': isInvalid}" 
+            (input)="validateAlphanumericInput($event)"> 
           <div *ngIf="!isValidNameInput" class="text-danger">{{ nameErrorMessage }}</div>
         </div>
 

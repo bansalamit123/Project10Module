@@ -86,6 +86,18 @@
 
 
     <ul class="nav navbar-nav pl-2 ">
+      <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
+        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <font style="color: white;">{{'Lead' | translate}}</font>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" [routerLink]="['/lead']"><i class="fa fa-user"></i> &nbsp; &nbsp;{{'Add Lead' |
+          translate}}</a>
+        <a class="dropdown-item" [routerLink]="['/leadlist']"><i class="fa fa-list"></i>&nbsp; {{'Lead List' |
+          translate}}</a>
+      </div>
+    </li>
+
 
 
       <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
@@ -101,6 +113,43 @@
       </li>
 
 
+      <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
+        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <font style="color: white;">{{'Proprietor ' | translate}}</font>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" [routerLink]="['/proprietor']"><i class="fa fa-user"></i> &nbsp; &nbsp;{{'Add Proprietor' |
+          translate}}</a>
+        <a class="dropdown-item" [routerLink]="['/proprietorlist']"><i class="fa fa-list"></i>&nbsp; {{'Proprietor List' |
+          translate}}</a>
+      </div>
+    </li>
+
+      <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
+        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <font style="color: white;">{{'AssetTracking' | translate}}</font>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" [routerLink]="['/assettracking']"><i class="fa fa-user"></i> &nbsp; &nbsp;{{'Add AssetTracking' |
+          translate}}</a>
+        <a class="dropdown-item" [routerLink]="['/assettrackinglist']"><i class="fa fa-list"></i>&nbsp; {{'AssetTracking List' |
+          translate}}</a>
+      </div>
+    </li>
+
+
+
+      <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
+        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <font style="color: white;">{{'TradeHistory' | translate}}</font>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" [routerLink]="['/tradehistory']"><i class="fa fa-user"></i> &nbsp; &nbsp;{{'Add TradeHistory' |
+          translate}}</a>
+        <a class="dropdown-item" [routerLink]="['/tradehistorylist']"><i class="fa fa-list"></i>&nbsp; {{'TradeHistory List' |
+          translate}}</a>
+      </div>
+    </li>
       
       <li class="nav-item dropdown" style="padding-left: 5px;">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -131,7 +180,7 @@
           </a>
         </div>
       </li>
-<!-- 
+
       <li class="nav-item dropdown" style="padding-left: 5px;">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <font style="color: white;">{{'Job' | translate}}</font>
@@ -145,14 +194,27 @@
           </a>
         </div>
       </li>
-       -->
+       
+      
+
+       <li class="nav-item dropdown" style="padding-left: 5px;">
+        <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <font style="color: white;">{{'Asset' | translate}}</font>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['/asset']">
+            <i class="fa fa-user"></i> &nbsp; &nbsp;{{'Add asset' | translate}}
+          </a>
+          <a class="dropdown-item" [routerLink]="['/assetlist']">
+            <i class="fa fa-list"></i>&nbsp; {{'asset List' | translate}}
+          </a>
+        </div>
+      </li>
       
 
 
-
-
       
-<!-- <li class="nav-item dropdown" style="padding-left: 5px;">
+ <li class="nav-item dropdown" style="padding-left: 5px;">
   <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <font style="color: white;">{{'Patient' | translate}}</font>
   </a>
@@ -292,7 +354,7 @@
       <i class="fa fa-list"></i>&nbsp; {{'Owner List' | translate}}
     </a>
   </div>
-</li>-->
+</li>
 
 <li class="nav-item dropdown" style="padding-left: 5px;">
   <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -352,7 +414,7 @@
 </li> 
 
 
- <!-- <li class="nav-item dropdown" style="padding-left: 5px;">
+ <li class="nav-item dropdown" style="padding-left: 5px;">
   <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <font style="color: white;">{{'ATMs' | translate}}</font>
   </a>
@@ -364,9 +426,9 @@
       <i class="fa fa-list"></i>&nbsp; {{'ATMs List' | translate}}
     </a>
   </div>
-</li>-->
+</li>
 
-<!-- <li class="nav-item dropdown" style="padding-left: 5px;">
+ <li class="nav-item dropdown" style="padding-left: 5px;">
   <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <font style="color: white;">{{'Customer' | translate}}</font>
   </a>
@@ -378,9 +440,9 @@
       <i class="fa fa-list"></i>&nbsp; {{'Customer list' | translate}}
     </a>
   </div>
-</li> -->
+</li> 
 
-<!-- <li class="nav-item dropdown" style="padding-left: 5px;">
+ <li class="nav-item dropdown" style="padding-left: 5px;">
   <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <font style="color: white;">{{'Company' | translate}}</font>
   </a>
@@ -392,11 +454,11 @@
       <i class="fa fa-list"></i>&nbsp; {{'company List' | translate}}
     </a>
   </div>
-</li> -->
+</li> 
 
 
 
-  <!-- <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
+   <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
           id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <font style="color: white;">{{'Salary' | translate}}</font>
         </a>
@@ -407,9 +469,9 @@
             translate}}</a>
         </div>
       </li>  
- -->
+ 
 
-      <!-- <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
+      <li class="nav-item dropdown" style="padding-left: 5px;"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
           id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <font style="color: white;">{{'Order' | translate}}</font>
         </a>
@@ -419,7 +481,7 @@
           <a class="dropdown-item" [routerLink]="['/orderlist']"><i class="fa fa-list"></i>&nbsp; {{'Order List' |
             translate}}</a>
         </div>
-      </li>  -->
+      </li>  
 
 
 
@@ -450,7 +512,7 @@
         </div>
       </li>
 
-      <!-- <li class="nav-item dropdown" style="padding-left: 5px"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
+       <li class="nav-item dropdown" style="padding-left: 5px"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
           id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <font style="color: white;">{{'Product' | translate}}</font>
         </a>
@@ -462,7 +524,7 @@
             translate}}</a>
         </div>
 
-      </li> -->
+      </li> 
 
       <li class="nav-item dropdown" style="padding-left: 5px"><a class="nav-link dropdown-toggle" [routerLink]="['/#']"
           id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -558,6 +620,5 @@
   </div>
 </nav>
 
-<div>
 
-</div>
+

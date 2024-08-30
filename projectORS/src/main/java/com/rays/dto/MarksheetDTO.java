@@ -10,7 +10,7 @@ import com.rays.common.BaseDTO;
 
 /**
  * Marksheet POJO class. It is persistent object.
- *Amit Bansal 
+ * Amit Bansal 
  */
 
 @Entity

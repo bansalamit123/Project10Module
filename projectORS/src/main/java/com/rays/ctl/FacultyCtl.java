@@ -25,7 +25,7 @@ import com.rays.service.SubjectServiceInt;
 
 
 /**
- *Amit Bansal 
+ * Amit Bansal 
  *
  */
 @RestController

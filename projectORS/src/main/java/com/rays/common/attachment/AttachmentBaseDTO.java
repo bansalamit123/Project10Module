@@ -9,7 +9,7 @@ import com.rays.common.BaseDTO;
 
 /**
  * Contains attached file information and data
- *Amit Bansal 
+ * Amit Bansal 
  */
 
 @MappedSuperclass

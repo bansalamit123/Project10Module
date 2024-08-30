@@ -15,7 +15,7 @@ import com.rays.form.StudentForm;
 import com.rays.service.CollegeServiceInt;
 import com.rays.service.StudentServiceInt;
 /**
- *Amit Bansal 
+ * Amit Bansal 
  *
  */
 @RestController
